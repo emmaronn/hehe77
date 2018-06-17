@@ -46,7 +46,310 @@ ul {
     list-style-type: none;
     margin: px 0px 0px 0px;
     padding: 0;
-}body {
+}body {body {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont;
+  font-weight: 300;
+    background: url(https://i.imgur.com/fost0rg.jpg) top right no-repeat; background-attachment:fixed;
+}
+
+
+
+header {
+  width: 100%;
+    padding: 0px 0;
+    text-align: center;
+}
+
+header .row,
+footer .row {
+  display: flex;
+  align-items: center;
+    width: 100&;
+}
+
+header h1 {
+  font-weight: 200;
+  margin: 0;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    color: #000000;
+    padding-top: 30px;
+    font-size: 68px;
+    width: 100%;
+    margin-bottom:5px;
+        
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+    
+}
+
+
+ul {
+    list-style-type: none;
+    margin: px 0px 0px 0px;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    font-family:-apple-system, system-ui, BlinkMacSystemFont;
+    text-transform:lowercase;
+    margin: 30px;
+    font-size: 15px;
+    letter-spacing: 4px;
+}
+
+
+li a {
+    color: #000000;
+}
+
+li a:hover { 
+    letter-spacing: 8px;
+    opacity: 0.7;
+    text-decoration: none;
+    color: gray;
+}
+
+html,
+body {
+    height: 100%;
+}
+ 
+
+
+.carousel,
+.item,
+.active {
+    height: 400px;
+    padding-top:0px;
+}
+
+.carousel-inner {
+  height: 400px;
+  background: #333;
+    margin-top: 10px;
+}
+
+.carousel-indicators {
+    
+    opacity: 0.3;
+}
+
+.carousel-caption{padding-bottom:60px;}
+
+h2{font-size: 64px; padding-bottom: 25px; font-weight: 200;
+letter-spacing: 2px;}
+p{padding:px}
+
+
+
+.fill {
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    opacity:0.6;
+    margin-top: 0px;
+    border-top: 3px solid #000000;
+    border-bottom: 3px solid #000000;
+}
+
+
+
+
+
+.btn-transparent {
+  background: transparent;
+  color: #fff;
+  border: 3px solid #fff;
+    opacity: 0.4;
+    height:60px;
+    width:160px;
+    padding-top: 0px;
+}
+.btn-transparent:hover {
+  background-color: #fff;
+    opacity: 0.5;
+}
+
+.btn-rounded {
+  border-radius: 30px;
+}
+
+.btn-large {
+  padding:10px 5px;
+  font-size: 25px;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont;
+    font-weight:300;
+    text-transform: uppercase;
+    text-shadow: 0.25px 0.25px 0.25px #000000;
+    margin-bottom: -10px;
+}
+
+
+.animated {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100px, 0, 0);
+    transform: translate3d(100px, 0, 0);
+  }
+
+  to {
+    opacity: 0.6;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100px, 0, 0);
+    transform: translate3d(100px, 0, 0);
+  }
+
+  to {
+    opacity: 0.6;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+
+
+
+section .row img {
+  margin: 0 0 30px;
+  width: 100%;
+}
+
+
+h3 {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont;
+    font-size: 32px;
+    color: #111;
+    font-weight:300;
+    margin:auto;
+    width: 850px;
+    text-align:center;
+    margin-top: 50px;
+        letter-spacing:2px;
+    
+}
+
+p {
+    font-family:-apple-system, system-ui, BlinkMacSystemFont;
+    margin-top:10px;
+    font-size:15px;
+    width:850px;
+    margin:auto;
+    
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding:  px;
+    margin:0 auto;
+
+width: 1230px; /*you decide width*/
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: auto;
+  padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    margin-top: 5px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+    padding:3px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 100%;) {
+  .column {
+    flex: 50%;
+    max-width: 100%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+.col-sm-6 {
+  margin: 0 0 0px;
+}
+
+
+.btn.btn-primary {
+  border-radius: 2px;
+  border: 0px;
+  color: #fbd1d5;
+  text-shadow: none;
+  background-color: #ffffff;
+}
+
+.btn.btn-primary:hover {
+  color: #ffffff;
+  background-color: #fbd1d5;
+}
+
+.btn-secondary {
+  background-color: #E8DFE0;
+  color: #ffffff;
+  margin: 0 0 30px;
+    height: 
+}
+
+footer {
+  font-size: 13px;
+  padding: 20px 0;
+    width: 40px;
+}
+
+footer .col-sm-8 {
+  display: flex;
+  justify-content: row;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li img {
+  width: 32px;
+  height: 32px;
+}
   font-family: -apple-system, system-ui, BlinkMacSystemFont;
   font-weight: 300;
     background: url(https://i.imgur.com/fost0rg.jpg) top right no-repeat; background-attachment:fixed;
